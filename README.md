@@ -6,12 +6,5 @@ the python script must be on a device you want to monitor, personally i use a sy
 
 tested on Debian 13 and ESP32 DEV KIT
 
-LIBRARIES:  
-  ARDUINO:  
-    WiFi.h  
-    WiFiUdp.h  
-    WebServer.h  
-    ArduinoJson.h  
-    iWebSocketsServer.h  
-  PYTHON:  
-  `python3 -m venv venv && source venv/bin/activate && sudo apt update && sudo apt install -y lm-sensors iputils-ping && pip install psutil requests`
+requirements:  
+`python3 -m venv venv && source venv/bin/activate && sudo apt update && sudo apt install -y lm-sensors iputils-ping && pip install psutil requests`

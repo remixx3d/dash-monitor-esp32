@@ -252,7 +252,6 @@ function updateUI(d){
 
   document.getElementById("extras").innerHTML=
     "uptime "+Math.floor((d.uptime??0)/60)+" min | "+
-    "esp32-s3 "+((d.esp32_oled)?'<span class="up">up</span>':'<span class="down">down</span>');
 
   const now = new Date();
 

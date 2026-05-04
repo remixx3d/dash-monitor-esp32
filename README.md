@@ -2,6 +2,6 @@ simple python + arduino ide scripts to host your very own web monitoring panel f
 
 everything should be customizable
 
-the python script must be on a device you want to monitor, personally i use a systemd service to run it automatically after reebot (in venv)
+the python script must be on a device you want to monitor, personally i use a systemd service to run it automatically after reboot (in venv)
 
 tested on Debian 13 and ESP32 DEV KIT

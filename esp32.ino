@@ -240,8 +240,12 @@ function updateUI(d){
   const f=Number(d.cpu_freq)||0;
   document.getElementById("freq").textContent=f?(f/1000).toFixed(2)+" GHz":"0";
 
-  document.getElementById("ram").textContent=`${d.ram_used} / ${d.ram_total}`;
-  document.getElementById("disk").textContent=`${d.disk_used} / ${d.disk_total}`;
+  document.getElementById("ram").textContent =
+    (Number(d.ram_used)||0).toFixed(2) + " GB / " +
+    (Number(d.ram_total)||0).toFixed(2) + " GB";
+  document.getElementById("disk").textContent =
+    (Number(d.disk_used)||0).toFixed(2) + " GB / " +
+    (Number(d.disk_total)||0).toFixed(2) + " GB";
 
   const s=d.services||{};
 
